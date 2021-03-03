@@ -1,12 +1,3 @@
-import express from 'express';
+const main = require("./src/main")
 
-const app = express();
-
-const PORT = 8080;
-
-
-
-
-app.listen(PORT, () => {
-  console.log("Serv is running...")
-})
+main()

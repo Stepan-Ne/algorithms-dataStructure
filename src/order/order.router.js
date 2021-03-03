@@ -1,5 +1,7 @@
+const orderController = require("./order.controller")
+
 const useRouter = (app) => {
-    app.post('/order', function (req, res) {
-        res.status(200)
-    })
+    app.post('/order', orderController.placeOrder)
 }
+
+module.exports = useRouter

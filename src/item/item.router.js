@@ -1,5 +1,7 @@
+const itemController = require("./item.controller")
+
 const useRouter = (app) => {
-    app.get('/item', function (req, res) {
-        res.send([{id: 1, name: "Pepperoni"}])
-    })
+    app.get('/item', itemController.getItemList)
 }
+
+module.exports = useRouter
